@@ -20,7 +20,12 @@ const reducer = (state = initialState, action) => {
 const store = createStore(reducer);
 window.store = store;
 
-ReactDOM.render(
-  <PatientList patients={store.getState().patients} />,
-  document.getElementById('app')
-);
+const render = function(){
+  ReactDOM.render(
+    <PatientList patients={store.getState().patients} />,
+    document.getElementById('app')
+  );
+}
+
+store.subscribe(render);
+render();
