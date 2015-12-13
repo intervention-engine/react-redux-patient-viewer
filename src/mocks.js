@@ -30,6 +30,24 @@ export const patientBundle = {
                     "status":"generated",
                     "div":"<div><table class=\"hapiPropertyTable\"><tbody><tr><td>Date of birth</td><td><span>31 December 1974</span></td></tr></tbody></table></div>"
                 },
+                "name":[
+                    {
+                        "use":"official",
+                        "family":[
+                            "Duck"
+                        ],
+                        "given":[
+                            "Daffy",
+                            "James"
+                        ]
+                    },
+                    {
+                        "use":"usual",
+                        "given":[
+                            "Jim"
+                        ]
+                    }
+                ],
                 "active":false,
                 "gender":"male",
                 "birthDate":"1975-01-01T00:00:00.000Z",
@@ -44,7 +62,7 @@ export const patientBundle = {
             "fullUrl":"http://fhirtest.uhn.ca/baseDstu2/Patient/843791",
             "resource":{
                 "resourceType":"Patient",
-                "id":"843791",
+                "id":"1",
                 "meta":{
                     "versionId":"14",
                     "lastUpdated":"2015-11-30T23:31:55.100-05:00"
