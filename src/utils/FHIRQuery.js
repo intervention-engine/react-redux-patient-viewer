@@ -1,6 +1,6 @@
 import fetch from 'isomorphic-fetch'
 
-const rootURL = "http://fhirtest.uhn.ca/baseDstu2";
+const rootURL = "http://localhost:3001";
 
 export const FHIRQuery = function (store, resource, queryParams={}){
   const queryString = Object.keys(queryParams).map(k => `${k}=${queryParams[k]}`).join("&");
